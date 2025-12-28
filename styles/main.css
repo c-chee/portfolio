@@ -1,3 +1,55 @@
-body {
-    background-color: black;
+/* Mobile first (default) */
+/* =========================
+    Variables & Themes    
+==========================*/
+:root {
+    /* Light Theme Colors */
+    --white: #fefeffff;
+    --pale-sky: #d6efffff;
+    --apricot-cream: #fed18cff;
+    --apricot-cream-2: #fed99bff;
+    --tomato: #fe654fff;
+
+    /* Dark Theme Colors */
+    --space-indigo: #171738ff;
+    --deep-twilight: #2e1760ff;
+    --vivid-royal: #3423a6ff;
+    --glaucous: #7180b9ff;
+    --honeydew: #dff3e4ff;
+
+    /* Active Colors */
+    --color-bg: var(--white);
+    --color-text: var(--space-indigo);
 }
+
+.theme-dark {
+    /* Active Colors */
+    --color-bg: var(--space-indigo);
+    --color-text: var(--white);
+}
+
+/* =========================
+    Base Styles    
+==========================*/
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.7s ease, color 0.5s ease;
+}
+
+/* =========================
+    Layout    
+==========================*/
+
+/* =========================
+    Components    
+==========================*/
+
+/* Tablet */
+@media (min-width: 768px) { }
+
+/* Desktop */
+@media (min-width: 1024px) { }
+
+/* Large screens */
+@media (min-width: 1280px) { }
