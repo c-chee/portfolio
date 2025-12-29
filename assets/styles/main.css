@@ -24,7 +24,7 @@
     /* Active Colors */
     --color-bg: var(--white);
     --color-text: var(--ink-black);
-    --color-primary: var(--charcoal-blue);
+    --color-primary: var(--ink-black);
     --color-secondary: var(--tomato);
     --hidden-nav-bg: var(--powder-blue);
 }
@@ -78,7 +78,7 @@ button {
     overflow-x: hidden;
     background: transparent;
     color: var(--color-primary);
-    z-index: 20;
+    z-index: 50;
 }
 
 .top-nav ul{
@@ -102,7 +102,7 @@ button {
     background: var(--hidden-nav-bg);
     color: var(--color-primary);
     transition: left 0.5s ease;
-    z-index: 20;
+    z-index: 50;
     font-family: 'Jura', sans-serif;
     overflow: hidden;
 }
@@ -149,7 +149,7 @@ button {
     height: 100vh;
     background: rgba(0,0,0,0.5);
     display: none;
-    z-index: 15;
+    z-index: 45;
 }
 
 #nav-close-btn {
@@ -170,7 +170,7 @@ button {
     top: 1rem;
     right: 1rem;
     font-size: 1.5em;
-    z-index: 25;
+    z-index: 55;
 }
 
 #theme-mode-btn:hover {
@@ -205,7 +205,7 @@ button {
     .top-nav a {
         padding: 0;
         color: var(--color-primary);
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
         transition: color 0.3s ease, text-underline-offset 0.3s ease;
     }
@@ -230,10 +230,14 @@ button {
 /* =========================
     Hero Section    
 ==========================*/
+/* Hero Image */
 .hero {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-layers {
@@ -254,6 +258,13 @@ button {
     will-change: transform;
     pointer-events: none;
     transform-origin: center;
+}
+
+/* Hero Overlay */
+.hero-overlay {
+    z-index:20;
+    color: var(--color-primary);
+    text-align: center;
 }
 
 
