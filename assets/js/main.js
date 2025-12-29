@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     link.classList.add('active');
                 }
             });
+
+            document.querySelectorAll('#hidden-nav a').forEach(link => {
+                if (link.dataset.page === currentPage) {
+                    link.classList.add('active');
+                }
+            });
         });
 
         // --- Theme Toggle ---
@@ -47,12 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Load saved theme
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('theme-dark');
-            themeBtn.innerHTML = '&#9788;';
+            themeBtn.innerHTML = '&#9790;';
         }
 
         themeBtn.addEventListener('click', () => {
             const isDark = document.body.classList.toggle('theme-dark');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            themeBtn.innerHTML = isDark ? '&#9788;' : '&#9790;';
+            themeBtn.innerHTML = isDark ? '&#9790;' : '&#9788;';
         });
 });
