@@ -85,6 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /** ================
+     *  Window Resize (Hero)
+    ====================*/
+    window.addEventListener('resize', () => {
+        activeHeroLayers.forEach((layer, i) => {
+            // First copy at 0, second copy at current window width
+            layer.dataset.x = i % 2 === 0 ? 0 : window.innerWidth;
+        });
+    });
 
     /** ================
      *  Theme Toggle
