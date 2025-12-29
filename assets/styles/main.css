@@ -5,24 +5,29 @@
 :root {
     /* Light Theme Colors */
     --white: #fefeffff;
-    --pale-sky: #d6efffff;
-    --apricot-cream: #fed18cff;
-    --apricot-cream-2: #fed99bff;
-    --tomato: #fe654fff;
+    --charcoal-blue: #454851ff;
+    --hunter-green: #3A5743;
+    --dark-spruce: #004f2dff;
+    --sage-green: #73956fff;
+    --muted-teal: #7bae7fff;
+    --celadon: #95d7aeff;
+    --honeydew: #dff3e4ff;
+    --lavender-blush: #fceff9ff;
+    --tomato: #FE4A49;
 
     /* Dark Theme Colors */
     --space-indigo: #171738ff;
     --deep-twilight: #2e1760ff;
     --vivid-royal: #3423a6ff;
     --glaucous: #7180b9ff;
-    --honeydew: #dff3e4ff;
+    --apricot-cream: #fed18cff;
 
     /* Active Colors */
     --color-bg: var(--white);
-    --color-text: var(--space-indigo);
-    --color-primary: var(--deep-twilight);
+    --color-text: black;
+    --color-primary: var(--charcoal-blue);
     --color-secondary: var(--tomato);
-    --hidden-nav-bg: var(--pale-sky);
+    --hidden-nav-bg: var(--honeydew);
 }
 
 .theme-dark {
@@ -83,7 +88,6 @@ button {
 #hamburger-nav {
     padding-left: 1rem;
     background: none;
-    color: var(--color-primary);
     font-size: 2em;
     border: none;
     color: var(--color-secondary);
