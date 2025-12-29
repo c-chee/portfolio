@@ -108,9 +108,19 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', theme);
         themeBtn.innerHTML = isDark ? '&#9790;' : '&#9788;';
 
-        buildHeroLayers(theme);
-        startHeroAnimation();
-    });
+        // buildHeroLayers(theme);
+        // startHeroAnimation();
+        activeHeroLayers.forEach(layer => {
+            layer.style.transition = 'opacity 0.15s ease-in-out';
+            layer.style.opacity = 0;
+        });
+
+        // Wait a short moment, then rebuild new layers
+        setTimeout(() => {
+            buildHeroLayers(theme); // rebuilds new layers
+            startHeroAnimation(); // restart movement animation
+        }, 300); // matches the CSS transition duration
+        });
 
     /** ================
      *  Hero Animation
