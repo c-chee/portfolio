@@ -68,20 +68,23 @@ document.addEventListener('DOMContentLoaded', () => {
         activeHeroLayers = [];
 
         heroConfig[theme].forEach((layer, index) => {
-            for (let i = 0; i < 2; i++) {
+            for (let i = 0; i < 2; i++) { // two copies per layer
                 const img = document.createElement('img');
-
                 img.src = layer.src;
                 img.className = 'hero-layer';
                 img.dataset.speed = layer.speed;
                 img.dataset.x = i === 0 ? 0 : window.innerWidth;
                 img.style.zIndex = index;
 
+                // Mirror the second copy
+                if (i === 1) img.dataset.mirrored = 'true';
+
                 heroLayersContainer.appendChild(img);
                 activeHeroLayers.push(img);
             }
         });
     }
+
 
     /** ================
      *  Theme Toggle
@@ -133,24 +136,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             x -= speed;
 
-            // Mirror the layer when it passes its width
+            // Loop layer to the end
             if (x <= -width) {
-                x += width;
-                // Flip horizontally
-                if (!layer.dataset.flipped || layer.dataset.flipped === 'false') {
-                    layer.style.transform = `translateX(${x}px) scaleX(-1)`;
-                    layer.dataset.flipped = 'true';
-                } else {
-                    layer.style.transform = `translateX(${x}px) scaleX(1)`;
-                    layer.dataset.flipped = 'false';
-                }
-            } else {
-                // Normal translation if not at boundary
-                const flipped = layer.dataset.flipped === 'true' ? -1 : 1;
-                layer.style.transform = `translateX(${x}px) scaleX(${flipped})`;
+                x += width * 2; // place after the other copy
             }
 
             layer.dataset.x = x;
+
+            // Apply mirroring if needed
+            if (layer.dataset.mirrored === 'true') {
+                layer.style.transform = `translateX(${x}px) scaleX(-1)`;
+            } else {
+                layer.style.transform = `translateX(${x}px) scaleX(1)`;
+            }
         });
 
         animationId = requestAnimationFrame(animateHeroLayers);
