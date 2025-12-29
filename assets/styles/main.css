@@ -4,15 +4,13 @@
 ==========================*/
 :root {
     /* Light Theme Colors */
-    --white: #fefeffff;
     --charcoal-blue: #454851ff;
-    --hunter-green: #3A5743;
-    --dark-spruce: #004f2dff;
-    --sage-green: #73956fff;
-    --muted-teal: #7bae7fff;
-    --celadon: #95d7aeff;
-    --honeydew: #dff3e4ff;
-    --lavender-blush: #fceff9ff;
+    --ink-black: #04080fff;
+    --glaucous: #507dbcff;
+    --powder-blue: #a1c6eaff;
+    --pale-sky: #bbd1eaff;
+    --alabaster-grey: #dae3e5ff;
+    --white: #fefeffff;
     --tomato: #FE4A49;
 
     /* Dark Theme Colors */
@@ -21,13 +19,14 @@
     --vivid-royal: #3423a6ff;
     --glaucous: #7180b9ff;
     --apricot-cream: #fed18cff;
+    --honeydew: #dff3e4ff;
 
     /* Active Colors */
     --color-bg: var(--white);
-    --color-text: black;
+    --color-text: var(--ink-black);
     --color-primary: var(--charcoal-blue);
     --color-secondary: var(--tomato);
-    --hidden-nav-bg: var(--honeydew);
+    --hidden-nav-bg: var(--powder-blue);
 }
 
 .theme-dark {
