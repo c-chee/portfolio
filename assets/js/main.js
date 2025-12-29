@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     /** ================
      *  Navigation
     ====================*/
@@ -57,22 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
     };
 
-    const heroLayersContainer = document.getElementById("hero-layers");
+    const heroLayersContainer = document.getElementById('hero-layers');
     let activeHeroLayers = [];
     let animationId = null;
 
     function buildHeroLayers(theme) {
         if (!heroLayersContainer) return;
 
-        heroLayersContainer.innerHTML = "";
+        heroLayersContainer.innerHTML = '';
         activeHeroLayers = [];
 
         heroConfig[theme].forEach((layer, index) => {
             for (let i = 0; i < 2; i++) {
-                const img = document.createElement("img");
+                const img = document.createElement('img');
 
                 img.src = layer.src;
-                img.className = "hero-layer";
+                img.className = 'hero-layer';
                 img.dataset.speed = layer.speed;
                 img.dataset.x = i === 0 ? 0 : window.innerWidth;
                 img.style.zIndex = index;
@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /** ================
      *  Hero Animation
     ====================*/
-
     function animateHeroLayers() {
         activeHeroLayers.forEach(layer => {
             let x = parseFloat(layer.dataset.x);
@@ -124,16 +123,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
             x -= speed;
 
+            // Mirror the layer when it passes its width
             if (x <= -width) {
-                x += width * 2;
+                x += width;
+                // Flip horizontally
+                if (!layer.dataset.flipped || layer.dataset.flipped === 'false') {
+                    layer.style.transform = `translateX(${x}px) scaleX(-1)`;
+                    layer.dataset.flipped = 'true';
+                } else {
+                    layer.style.transform = `translateX(${x}px) scaleX(1)`;
+                    layer.dataset.flipped = 'false';
+                }
+            } else {
+                // Normal translation if not at boundary
+                const flipped = layer.dataset.flipped === 'true' ? -1 : 1;
+                layer.style.transform = `translateX(${x}px) scaleX(${flipped})`;
             }
 
             layer.dataset.x = x;
-            layer.style.transform = `translateX(${x}px)`;
         });
 
         animationId = requestAnimationFrame(animateHeroLayers);
     }
+
 
     function startHeroAnimation() {
         if (animationId) cancelAnimationFrame(animationId);

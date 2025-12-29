@@ -253,6 +253,7 @@ button {
     left: 0;
     will-change: transform;
     pointer-events: none;
+    transform-origin: center;
 }
 
 
