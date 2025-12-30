@@ -64,6 +64,7 @@ main {
     flex-direction: column;
     min-height: 100vh;
     flex: 1;
+    justify-content: center;
 }
 
 button {
@@ -373,10 +374,6 @@ body:not(.theme-dark) .footer-connect img {
     }
 }
 
-@media (min-width: 1280px) {
-    
-}
-
 /* =========================
     Hero Section    
 ==========================*/
@@ -396,7 +393,7 @@ body:not(.theme-dark) .footer-connect img {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .hero-layer {
@@ -418,3 +415,123 @@ body:not(.theme-dark) .footer-connect img {
     text-align: center;
 }
 
+/* =========================
+    About Me - Index    
+==========================*/
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 5em 0;
+}
+
+/* Slides */
+/* Slideshow wrapper */
+.about-slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main container */
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Individual slides */
+.slide-home {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-home.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Images */
+.slide-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Caption */
+/* .caption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    opacity: 0.8;
+} */
+
+/* Arrows */
+.back,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: var(--ink-black);
+    opacity: 60%;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 0.2em 0.3em;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.back { left: 10px; }
+.next { right: 10px; }
+
+.back:hover,
+.next:hover {
+    background: var(--ink-black);
+    opacity: 80%;
+}
+
+/* Dots */
+.dot-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: var(--color-primary);
+    opacity: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: var(--color-secondary);
+    opacity: 100%;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+    
+}

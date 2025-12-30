@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         })
-        .catch(err => console.error('Error loading navbar:', err));
+        .catch(err => console.error('Error loading nav bar:', err));
 
     /** ================
      *  Footer
@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
         light: [
             { src: 'assets/images/light-bg.png', speed: 0 },
             { src: 'assets/images/light-cloud-1.png', speed: 0.02 },
-            { src: 'assets/images/light-cloud-2.png', speed: 0.08 },
-            { src: 'assets/images/light-cloud-3.png', speed: 0.12 }
+            { src: 'assets/images/light-cloud-2.png', speed: 0.07 },
+            { src: 'assets/images/light-cloud-3.png', speed: 0.15 }
         ],
         dark: [
             { src: 'assets/images/dark-bg.png', speed: 0 },
             // { src: 'assets/images/dark-moon.png', speed: 0.01 },
             { src: 'assets/images/dark-cloud-1.png', speed: 0.05 },
-            { src: 'assets/images/dark-cloud-2.png', speed: 0.10 }
+            { src: 'assets/images/dark-cloud-2.png', speed: 0.15 }
         ]
     };
 
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             layer.dataset.x = x;
 
-            // Apply mirroring if needed
+            // Mirroring img
             if (layer.dataset.mirrored === 'true') {
                 layer.style.transform = `translateX(${x}px) scaleX(-1)`;
             } else {

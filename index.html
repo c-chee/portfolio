@@ -37,12 +37,26 @@
             </div>
         </section>
 
-        <!-- ==== [SLIDESHOW SECTION] ==== -->
-        <section>
-            <p>somthing</p>
-            <p>somthing</p>
-            <p>somthing</p>
-            <p>somthing</p>
+        <!-- ==== [ABOUT ME SLIDESHOW] ==== -->
+        <section class = 'about-section'>
+            <!-- About Me Text -->
+            <div class = 'about-text'>
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+
+            <!-- Images Slides -->
+            <div class = 'image-slideshow'>
+                <div class = 'slide-container'>
+                    <!-- Slides will be loaded with js -->
+                    <!-- Currently not inccluding captions... -->
+                    <!-- Navigation -->
+                    <a class = 'next' onclick = 'plusSlide(1)'>&#10095;</a>
+                    <a class = 'back' onclick = 'plusSlide(-1)'>&#10094;</a>
+
+                </div>
+                <div class = 'dot-container'></div>
+            </div>
         </section>
 
     </main>
@@ -53,5 +67,6 @@
 
     <!-- JS Link -->
     <script src = 'assets/js/main.js'></script>
+    <script src = 'assets/js/index.js'></script>
 </body>
 </html>
