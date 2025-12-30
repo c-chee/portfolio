@@ -57,12 +57,12 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: background-color 0.7s ease, color 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     flex: 1;
 }
 
