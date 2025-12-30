@@ -44,6 +44,7 @@
 html {
     margin: 0;
     padding: 0;
+    height: 100%;
     min-width: 100vw;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -52,9 +53,17 @@ html {
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: background-color 0.7s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 button {
@@ -255,6 +264,7 @@ footer {
     padding: 0;
     align-items: flex-start;
     text-align: center;
+    background: transparent;
 }
 
 .footer-personal-brand { grid-area: brand; }
