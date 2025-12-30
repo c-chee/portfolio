@@ -65,8 +65,9 @@ button {
 }
 
 /* =========================
-    Navigations    
+    Header     
 ==========================*/
+/* Top Nav */
 .top-nav {
     position: fixed;
     width: 100vw;
@@ -229,6 +230,137 @@ button {
 }
 
 /* =========================
+    Footer    
+==========================*/
+footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.footer-containter {
+    display: grid;
+    grid-template:
+        'brand' auto
+        'nav' auto
+        'connect' auto
+        'copy' auto
+        / 1fr;
+
+    width: 100%;
+    gap: 2em;
+    padding: 0;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.footer-personal-brand { grid-area: brand; }
+.footer-nav { grid-area: nav; }
+.footer-connect { grid-area: connect; }
+
+.logo-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-connect img {
+    width: 2em;
+}
+
+/* Default img are white - dark mode */
+.footer-connect img:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+/* Invert to black - light mode */
+body:not(.theme-dark) .footer-connect img {
+    filter: invert(1);
+}
+
+.footer-copyright { 
+    grid-area: copy; 
+    opacity: 60%;
+}
+
+.footer-personal-brand {
+    color: var(--color-secondary);
+}
+
+.footer-personal-brand p{
+    margin: 0;
+}
+
+.footer-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.footer-nav a {
+    padding: 0;
+    color: var(--color-primary);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease, text-underline-offset 0.3s ease;
+}
+
+.footer-nav a:hover {
+    cursor: pointer;
+    text-decoration: underline var(--color-secondary);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5px;
+}
+
+@media (min-width: 768px) {
+    .footer-containter {
+        grid-template:
+            'brand connect' auto
+            'nav nav' auto
+            'copy  copy'  auto
+            / 1fr  1fr;
+        
+        gap: 3em;
+        padding: 1em 2em;
+    }
+
+    .footer-nav ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-containter {
+        grid-template:
+            'brand nav connect' auto
+            'copy  copy copy'   auto
+            / 1fr  1fr  1fr;
+        
+        gap: 3em;
+        padding: 1em 2em;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+/* =========================
     Hero Section    
 ==========================*/
 /* Hero Image */
@@ -269,11 +401,3 @@ button {
     text-align: center;
 }
 
-
-
-/* ========================== */
-/* Desktop */
-@media (min-width: 1024px) { }
-
-/* Large screens */
-@media (min-width: 1280px) { }
