@@ -433,6 +433,10 @@ body:not(.theme-dark) .footer-connect img {
     margin: 0 1em;
 }
 
+.about-text h4 {
+    margin-top: 3em;
+}
+
 /* Slides */
 /* Slideshow wrapper */
 .about-slideshow {
