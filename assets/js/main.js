@@ -1,9 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    /** ================
-     *  Navigation
-    ====================*/
-
+    /** =========================
+     *  Header Navigations Bar
+    =============================*/
     fetch('assets/html/nav.html')
         .then(response => response.text())
         .then(data => {
@@ -36,11 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.classList.add('active');
                 }
             });
-        });
+        })
+        .catch(err => console.error('Error loading navbar:', err));
 
     /** ================
-     *  Hero (Paralax)
+     *  Footer
     ====================*/
+    fetch('assets/html/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+
+    /** =======================
+     *  Hero (Paralax Effect)
+    ============================ */
 
     const heroConfig = {
         light: [
