@@ -421,12 +421,16 @@ body:not(.theme-dark) .footer-connect img {
     About Me - Index    
 ==========================*/
 .about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     gap: 2em;
     margin: 5em 1em;
+}
+
+.about-text {
+    margin: 0 1em;
 }
 
 /* Slides */
@@ -527,11 +531,20 @@ body:not(.theme-dark) .footer-connect img {
 }
 
 @media (min-width: 768px) {
-
+    .about-text {
+        margin: 0 2em;
+    }
 }
 
 @media (min-width: 1024px) {
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .about-text {
+        margin: 1em;
+        padding-left: 5em;
+    }
 }
 
 @media (min-width: 1280px) {
