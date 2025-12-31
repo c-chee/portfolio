@@ -73,6 +73,7 @@ main {
 
 main .page-title {
     text-align: center;
+    padding-top: 2em;
 }
 
 button {
