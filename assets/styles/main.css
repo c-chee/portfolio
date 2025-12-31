@@ -204,6 +204,9 @@ button {
     right: 1rem;
     font-size: 1.5em;
     z-index: 55;
+    background-color: transparent;
+    border-radius: 1px;
+    backdrop-filter: blur(10px);
 }
 
 #theme-mode-btn:hover {

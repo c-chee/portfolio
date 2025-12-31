@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
         light: [
             { src: 'assets/images/light-bg.png', speed: 0 },
             { src: 'assets/images/light-cloud-1.png', speed: 0.02 },
-            { src: 'assets/images/light-cloud-2.png', speed: 0.07 },
+            { src: 'assets/images/light-cloud-2.png', speed: 0.05 },
             { src: 'assets/images/light-cloud-3.png', speed: 0.15 }
         ],
         dark: [
-            { src: 'assets/images/dark-bg.png', speed: 0 },
+            { src: 'assets/images/dark-bg.png', speed: 0.05 },
             // { src: 'assets/images/dark-moon.png', speed: 0.01 },
             { src: 'assets/images/dark-cloud-1.png', speed: 0.05 },
-            { src: 'assets/images/dark-cloud-2.png', speed: 0.15 }
+            { src: 'assets/images/dark-cloud-2.png', speed: 0.17 }
         ]
     };
 
