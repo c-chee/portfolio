@@ -8,8 +8,8 @@
     },
     {
         "photo": "",
-        "topic": "Trillo Project (Section 7)",
-        "title": "Section 6: Advanced Responsive Design",
+        "topic": "Advanced CSS and Sass",
+        "title": "Trillo Project (Section 7)",
         "reflection": "One important concept I learned is how CSS, similar to Sass, allows the creation of custom variables for colors. This is particularly useful when updating colors across a project without manually changing each style. Instead, you can update the variable once, and all related elements automatically reflect the change. This was the first time I applied this concept in my portfolio project, specificcally using variable in CSS rather than Sass. While designing light and dark mode themes, I defined primary and secondary color variables linked to the respective theme variables. This ensures that the design colors update automatically when switching themes. It is important to note that these variables must be defined in the `:root` selector.",
         "date": "2025-12-31"
     },
