@@ -1,4 +1,4 @@
-# R2H Portfolio
+# Portfolio
 
 ## Overview
 - Personal portfolio website, built to showcase my skills, projects, and web development practices.
