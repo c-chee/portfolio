@@ -673,4 +673,12 @@ body:not(.theme-dark) .footer-connect img {
 @media (min-width: 1024px) {
 
 }
-    
+
+/* =========================
+    Resume   
+==========================*/ 
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
