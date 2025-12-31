@@ -3,7 +3,7 @@
     Variables & Themes    
 ==========================*/
 :root {
-    /* Light Theme Colors */
+    --light-blue: #9dc3f6;
     --charcoal-blue: #454851ff;
     --ink-black: #04080fff;
     --glaucous: #507dbcff;
@@ -27,7 +27,7 @@
     --color-primary: var(--ink-black);
     --color-secondary: var(--tomato);
     --hidden-nav-bg: var(--powder-blue);
-    --contact-bg-img: url('../images/light-ocean.jpg'); 
+    --contact-bg-img: url('../images/light-bg.png'); 
 }
 
 .theme-dark {
@@ -37,7 +37,7 @@
     --color-primary: var(--honeydew);
     --color-secondary: var(--apricot-cream);
     --hidden-nav-bg: var(--deep-twilight);
-    --contact-bg-img: url('../images/dark-ocean.jpg'); 
+    --contact-bg-img: url('../images/dark-bg.png'); 
 }
 
 /* =========================
@@ -66,7 +66,13 @@ main {
     flex-direction: column;
     min-height: 100vh;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+}
+
+main .page-title {
+    text-align: center;
 }
 
 button {
@@ -556,16 +562,24 @@ body:not(.theme-dark) .footer-connect img {
 /* =========================
     Contact Form   
 ==========================*/
-.contact-section {
+.contact-heading {
+    padding-top: 4em;
+    background: var(--contact-bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container {
     display: flex;
     flex-direction: column;
     align-self: center;
+    align-content: flex-start;
     margin: 2em;
-    padding: 1em;
+    /* padding-top: 6em; */
     width: 90%;
-    /* background-image: var(--contact-bg-img);
-    background-repeat: no-repeat;
-    background-size: cover; */
+    max-width: 30em;
+    /* height: 100vh; */
+    /* background-color: var(--pale-sky); */
     border-radius: 0.2em;
     letter-spacing: 1px;
 }
@@ -577,6 +591,7 @@ body:not(.theme-dark) .footer-connect img {
     align-items: center;
     /* width: 100%; */
     width: 400px;
+    max-width: 30em;
     height: auto;
 }
 
@@ -649,8 +664,8 @@ body:not(.theme-dark) .footer-connect img {
     align-self: flex-end;
 }
 @media (min-width: 768px) {
-    .contact-section {
-        width: 45em;
+    .contact-form {
+        width: 30em;
     }
 
     .submit-btn:hover {

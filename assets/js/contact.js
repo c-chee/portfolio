@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cache DOM elements
     const contactForm = document.getElementById('contact-form');
     const validationMessage = document.getElementById('validation-message');
-    const contactSection = document.querySelector('.contact-section');
+    const contactSection = document.querySelector('.contact-container');
     const thankyouMessage = document.getElementById('thankyou-section');
 
     if (contactForm) {
