@@ -1,29 +1,29 @@
 [
     {
         "photo": "",
-        "topic": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
-        "title": "Section 5: ",
+        "topic": "Advanced CSS and Sass",
+        "title": "Section 5: Using Advanced CSS and Sass",
         "reflection": "Something 1",
         "date": "2025-12-31"
     },
     {
         "photo": "",
-        "topic": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
-        "title": "Section 6: ",
+        "topic": "Advanced CSS and Sass",
+        "title": "Section 6: Advanced Responsive Design",
         "reflection": "Something 2",
         "date": "2025-12-31"
     },
     {
         "photo": "",
-        "topic": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
-        "title": "Section 7: ",
+        "topic": "Advanced CSS and Sass",
+        "title": "Section 7: Master Flexbox",
         "reflection": "Something 3",
         "date": "2025-12-31"
     },
     {
         "photo": "",
-        "topic": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
-        "title": "Section 9: ",
+        "topic": "Advanced CSS and Sass",
+        "title": "Section 9: Master CSS Grid Layouts",
         "reflection": "Something 4",
         "date": "2025-12-31"
     }
