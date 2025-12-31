@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('reflections-grid');
 
-    fetch('assets/data/reflections-r2h.json')
+    fetch('assets/data/reflections-udemy.json')
     .then(response => response.json())
     .then(posts => {
         posts.forEach(post => {
