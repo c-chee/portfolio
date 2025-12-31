@@ -27,9 +27,10 @@
     --color-text: var(--ink-black);
     --color-primary: var(--ink-black);
     --color-secondary: var(--tomato);
+    --color-third: var(--powder-blue);
     --hidden-nav-bg: var(--powder-blue);
     --footer-bg: var(--light-blue);
-    --contact-ty-bg: url('../images/light-ocean.jpg'); 
+    --contact-ty-bg: url('../images/light-ocean.jpg');
 }
 
 .theme-dark {
@@ -38,6 +39,7 @@
     --color-text: var(--white);
     --color-primary: var(--honeydew);
     --color-secondary: var(--apricot-cream);
+    --color-third: var(--deep-twilight);
     --hidden-nav-bg: var(--deep-twilight);
     --footer-bg: var(--dark-purple);
     --contact-ty-bg: url('../images/dark-ocean.jpg'); 
@@ -723,8 +725,6 @@ body:not(.theme-dark) .footer-connect img {
     }
 }
 
-
-
 /* =========================
     Reflections   
 ==========================*/ 
@@ -741,6 +741,29 @@ body:not(.theme-dark) .footer-connect img {
 
 .topic-tiles {
     text-align: center;
+    background: var(--color-third);
+    padding: 1em 3em 3em 3em;
+    margin: 0;
+    width: 15em;
+    border-radius: 5px;
+}
+
+.topic-tiles p {
+padding-bottom: 2em;
+}
+
+.topic-tiles a {
+    align-self: center;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    background: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: 0.3em;
+    letter-spacing: 1px;
+    justify-self: center;
 }
 
 
@@ -749,5 +772,11 @@ body:not(.theme-dark) .footer-connect img {
         grid-template-columns: repeat(2, 1fr);
         max-width: 800px;
         margin: 0 auto;
+    }
+
+    .topic-tiles a:hover {
+        cursor: pointer;
+        background: var(--color-secondary);
+        color: var(--color-third);
     }
 }
