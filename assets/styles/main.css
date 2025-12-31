@@ -859,4 +859,38 @@ padding-bottom: 2em;
     }
 }
 
+/* Gif */
+.moving-gif {
+    position: fixed;
+    width: 60px;
+    animation: moveAbrupt 25s infinite;
+    transform-origin: center;
+    object-fit: cover;
+    bottom: 0;
+}
+
+/* Abrupt flip animation */
+@keyframes moveAbrupt {
+    0% {
+        left: 0;
+        transform: scaleX(1); 
+    }
+    49.999% {
+        left: calc(100% - 125px);
+        transform: scaleX(1); 
+    }
+    50% {
+        left: calc(100% - 125px);
+        transform: scaleX(-1); 
+    }
+    99.999% {
+        left: 0;
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1); 
+    }
+}
+
 
