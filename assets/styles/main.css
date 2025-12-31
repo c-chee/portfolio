@@ -27,6 +27,7 @@
     --color-primary: var(--ink-black);
     --color-secondary: var(--tomato);
     --hidden-nav-bg: var(--powder-blue);
+    --contact-bg-img: url('../images/light-ocean.jpg'); 
 }
 
 .theme-dark {
@@ -36,6 +37,7 @@
     --color-primary: var(--honeydew);
     --color-secondary: var(--apricot-cream);
     --hidden-nav-bg: var(--deep-twilight);
+    --contact-bg-img: url('../images/dark-ocean.jpg'); 
 }
 
 /* =========================
@@ -551,6 +553,115 @@ body:not(.theme-dark) .footer-connect img {
     }
 }
 
-@media (min-width: 1280px) {
+/* =========================
+    Contact Form   
+==========================*/
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 2em;
+    padding: 1em;
+    width: 90%;
+    /* background-image: var(--contact-bg-img);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 0.2em;
+    letter-spacing: 1px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    /* width: 100%; */
+    width: 400px;
+    height: auto;
+}
+
+#contact-form label {
+    margin-bottom: 0.5em;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#contact-form textarea {
+    height: 8em;
+}
+
+.submit-btn {
+    align-self: center;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    font-weight: 600;
+    background: transparent;
+    color: black;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    letter-spacing: 1px;
+    justify-self: center;
+}
+
+#contact-form label, 
+.submit-btn{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+#validation-message {
+    margin: 1em 0;;
+}
+
+/* -- Thank You Section */
+.thankyou-section {
+    display: none;
+    flex-direction: column;
+    margin: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.053);
+    border-radius: 0.2em;
+}
+
+.thankyou-section p {
+    font-weight: 600;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 3em;
     
 }
+
+.thankyou-section img {
+    width: 200px;
+    height: 75px;
+    object-fit: cover;
+    align-self: flex-end;
+}
+@media (min-width: 768px) {
+    .contact-section {
+        width: 45em;
+    }
+
+    .submit-btn:hover {
+        cursor: pointer;
+        background-color: #f16e0b;
+        color: black;
+        border: black;
+    } 
+}
+
+@media (min-width: 1024px) {
+
+}
+    

@@ -24,12 +24,46 @@
     </header>
 
     <main>
+        <!-- Contact Form -->
+        <section class = 'contact-section'>
+            <section class = 'contact-title'>
+                <h1>Contact</h1>
+                <p>La la la </p>
+            </section>
 
-        <section>
-            <p>somthing</p>
-            <p>somthing</p>
-            <p>somthing</p>
-            <p>somthing</p>
+            <form id = 'contact-form'>
+                <!-- Name -->
+                <label for = 'name'>Name: </label>
+                <input type = 'text' id = 'name-input' name = 'name' required>
+
+                <!-- Phone -->
+                <label for = 'phone'>Phone: </label>
+                <input type = 'text' id = 'phone-input' name = 'phone' required>
+
+                <!-- Email -->
+                <label for = 'email'>Email: </label>
+                <input type = 'text' id = 'email-input' name = 'email' required>
+
+                <!-- Message -->
+                <label for = 'message'>Message: </label>
+                <textarea id = 'message-input' name = 'message' required></textarea>
+
+                <!-- Validation Message -->
+                <div id = 'validation-message'></div> 
+
+                <!-- Submit -->
+                <button class = 'submit-btn' type = 'submit'>Submit</button>
+
+            </form>
+
+            <!-- Thank You Message -->
+            <section id = 'thankyou-section' class = 'thankyou-section'>
+                <h3> Your form has been submitted successfully. I will reach out to you soon. Thank You!</h3>
+                <p>From,</p>
+                <p></p>
+                <!-- <img src = ''> -->
+            </section>
+
         </section>
 
     </main>
@@ -40,5 +74,6 @@
 
     <!-- JS Link -->
     <script src = 'assets/js/main.js'></script>
+    <script src = 'assets/js/contact.js'></script>
 </body>
 </html>
