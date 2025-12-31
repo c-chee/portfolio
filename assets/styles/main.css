@@ -563,13 +563,6 @@ body:not(.theme-dark) .footer-connect img {
 /* =========================
     Contact Form   
 ==========================*/
-.contact-heading {
-    padding-top: 4em;
-    background: var(--contact-bg-img);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .contact-container {
     display: flex;
     flex-direction: column;
