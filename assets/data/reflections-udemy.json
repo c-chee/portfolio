@@ -2,29 +2,22 @@
     {
         "photo": "",
         "topic": "Advanced CSS and Sass",
-        "title": "Section 5: Using Advanced CSS and Sass",
-        "reflection": "Something 1",
+        "title": "Natours Project (Section 5 & 6)",
+        "reflection": "Sass allows the use of variables, which makes managing and updating colors much easier. Nesting styles is also possible, improving organization. CSS architecture is crucial for structuring a project effectively, such as creating components for buttons and defining variables for custom colors. Previously, in a group project, I believed that using a single file for styles was more efficient than editing multiple files for the same changes. After this lesson, I realized the opposite is true. Creating separate files and organizing them by type enhances efficiency and maintains cleaner code. Linking files does not necessarily make coding more complicated.",
         "date": "2025-12-31"
     },
     {
         "photo": "",
-        "topic": "Advanced CSS and Sass",
+        "topic": "Trillo Project (Section 7)",
         "title": "Section 6: Advanced Responsive Design",
-        "reflection": "Something 2",
+        "reflection": "One important concept I learned is how CSS, similar to Sass, allows the creation of custom variables for colors. This is particularly useful when updating colors across a project without manually changing each style. Instead, you can update the variable once, and all related elements automatically reflect the change. This was the first time I applied this concept in my portfolio project, specificcally using variable in CSS rather than Sass. While designing light and dark mode themes, I defined primary and secondary color variables linked to the respective theme variables. This ensures that the design colors update automatically when switching themes. It is important to note that these variables must be defined in the `:root` selector.",
         "date": "2025-12-31"
     },
     {
         "photo": "",
         "topic": "Advanced CSS and Sass",
-        "title": "Section 7: Master Flexbox",
-        "reflection": "Something 3",
-        "date": "2025-12-31"
-    },
-    {
-        "photo": "",
-        "topic": "Advanced CSS and Sass",
-        "title": "Section 9: Master CSS Grid Layouts",
-        "reflection": "Something 4",
+        "title": "Nexter Project (Section 9)",
+        "reflection": "CSS Grid is a powerful tool for creating responsive layouts, similar to flexbox. I learned that Grid can be used for designing both specific sections and the overall webpage structure. It allows precise placement of components across columns and rows. A design approach I recently explored is the “bento box” layout, which creates visually interesting, puzzle-like arrangements. I can see how Grid can facilitate this type of design. In a future iteration of my portfolio project, I plan to utilize Grid to develop a bento-style layout for displaying my projects.",
         "date": "2025-12-31"
     }
 ]

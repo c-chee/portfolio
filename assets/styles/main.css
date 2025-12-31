@@ -842,6 +842,7 @@ padding-bottom: 2em;
 .card .date {
     text-align: right;
     opacity: 60%;
+    margin-top: auto;
 }
 
 @media (min-width: 1024px) {
