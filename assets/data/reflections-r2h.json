@@ -1,20 +1,20 @@
 [
     {
-        "photo": "",
+        "photo": "assets/images/pd.png",
         "topic": "Road2Hire",
         "title": "Professional Development",
         "reflection": "After the first week, I realized that I am still a bit shy. Public speaking is not my strongest suit. However, one of my mentors, Justin, has reminded me to focus on small wins. If I can answer an easy question, I should just go for it. I hope to further develop my speaking skills in the future.",
         "date": "2025-10-15"
     },
     {
-        "photo": "",
+        "photo": "assets/images/tech.png",
         "topic": "Road2Hire",
         "title": "Technical",
         "reflection": "From a technical perspective, developing this portfolio has been a lot of fun! I really enjoy tweaking the HTML and CSS to enhance the site’s appearance. However, there’s still so much to learn, especially since I struggled with implementing the slideshow on the home page. I’m eager to learn more about JavaScript, how it can be integrated with HTML, and the various ways it can be used.",
         "date": "2025-10-15"
     },
     {
-        "photo": "",
+        "photo": "assets/images/0.jpeg",
         "topic": "Road2Hire",
         "title": "Personal",
         "reflection": "So far, my R2H experience has been positive. I’ve realized that I haven’t fully adjusted to the workload and schedule after the first week. I tend to spend a lot of time studying the content rather than putting it into practice, which sometimes leaves me with little time to work on assignments. Moving forward, I plan to be more proactive in my learning by getting ahead and starting assignments early, even if it’s just reviewing the guidelines. I also want to set a specific timeframe each day both for working on assignments and for reviewing materials.",

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.appendChild(img);
         }
 
-        const topic = document.createElement('span');
+        const topic = document.createElement('p');
         topic.classList.add('topic');
         topic.textContent = post.topic;
 
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.appendChild(topic);
         card.appendChild(title);
-        card.appendChild(date);
         card.appendChild(reflection);
+        card.appendChild(date);
 
         grid.appendChild(card);
         });

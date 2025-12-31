@@ -736,6 +736,7 @@ body:not(.theme-dark) .footer-connect img {
     justify-content: center;
     justify-items: center;
     gap: 4em;
+    margin: 2em;
     padding: 1em;
     border-radius: 0.2em;
 }
@@ -772,7 +773,7 @@ padding-bottom: 2em;
     .topic-tiles-container {
         grid-template-columns: repeat(2, 1fr);
         max-width: 800px;
-        margin: 0 auto;
+        margin: 2em auto;
     }
 
     .topic-tiles a:hover {
@@ -782,6 +783,77 @@ padding-bottom: 2em;
     }
 }
 
-/* Udemy Reflections */
+/* R2H Udemy Reflections */
+.back-btn {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 1em;
+    width: fit-content;
+}
 
-/* R2H Reflections */
+.back-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+.reflections-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2em;
+    gap: 1em;
+}
+
+.card {
+    background: var(--color-third);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0.2em;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0.2em;
+}
+
+.card h3 {
+    text-align: left;
+}
+
+.card p {
+    text-align: left;
+}
+
+.card .topic {
+    color: var(--color-third);
+    background-color: var(--color-secondary);
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.card .date {
+    text-align: right;
+    opacity: 60%;
+}
+
+@media (min-width: 1024px) {
+    .reflections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1250px) {
+    .reflections-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
