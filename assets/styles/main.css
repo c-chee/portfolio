@@ -8,7 +8,7 @@
     --ink-black: #04080fff;
     --glaucous: #507dbcff;
     --powder-blue: #a1c6eaff;
-    --pale-sky: #bbd1eaff;
+    --lavender: #DFEBFF;
     --alabaster-grey: #dae3e5ff;
     --white: #fefeffff;
     --tomato: #FE4A49;
@@ -27,7 +27,7 @@
     --color-text: var(--ink-black);
     --color-primary: var(--ink-black);
     --color-secondary: var(--tomato);
-    --color-third: var(--powder-blue);
+    --color-third: var(--lavender);
     --hidden-nav-bg: var(--powder-blue);
     --footer-bg: var(--light-blue);
     --contact-ty-bg: url('../images/light-ocean.jpg');
@@ -781,3 +781,7 @@ padding-bottom: 2em;
         color: var(--color-third);
     }
 }
+
+/* Udemy Reflections */
+
+/* R2H Reflections */
