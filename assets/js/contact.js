@@ -38,11 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
             showValidation('');
 
             // Swap visibility between form and thank-you message
-            toggleVisibility(contactSection, thankyouMessage);
+            // toggleVisibility(contactSection, thankyouMessage);
+            toggleVisibility(contactForm, thankyouMessage);
 
             // Reset form and revert back after 3 seconds
             setTimeout(() => {
-                toggleVisibility(thankyouMessage, contactSection);
+                thankyouMessage.style.display = 'none';
+                contactForm.style.display = 'block';
                 contactForm.reset();
             }, 3000);
         });

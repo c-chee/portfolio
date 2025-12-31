@@ -29,7 +29,7 @@
     --color-secondary: var(--tomato);
     --hidden-nav-bg: var(--powder-blue);
     --footer-bg: var(--light-blue);
-    --contact-bg-img: url('../images/light-bg.png'); 
+    --contact-ty-bg: url('../images/light-ocean.jpg'); 
 }
 
 .theme-dark {
@@ -40,7 +40,7 @@
     --color-secondary: var(--apricot-cream);
     --hidden-nav-bg: var(--deep-twilight);
     --footer-bg: var(--dark-purple);
-    --contact-bg-img: url('../images/dark-bg.png'); 
+    --contact-ty-bg: url('../images/dark-ocean.jpg'); 
 }
 
 /* =========================
@@ -601,7 +601,7 @@ body:not(.theme-dark) .footer-connect img {
 #contact-form label {
     margin-bottom: 0.5em;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -615,8 +615,8 @@ body:not(.theme-dark) .footer-connect img {
     font-size: 1em;
     font-weight: 600;
     background: transparent;
-    color: black;
-    border: 2px solid white;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
     border-radius: 0.3em;
     letter-spacing: 1px;
     justify-self: center;
@@ -646,25 +646,34 @@ body:not(.theme-dark) .footer-connect img {
 .thankyou-section {
     display: none;
     flex-direction: column;
-    margin: 2em;
+    margin: 0;
+    padding: 2em;
+    max-width: 30em;
+    background: var(--contact-ty-bg);
+    border: 2px solid var(--footer-bg);
+    border-radius: 0.3em;
+}
+
+.thankyou-section h3 {
+    font-weight: 600;
+    backdrop-filter: blur(5px);
     padding: 1em;
-    background-color: rgba(255, 255, 255, 0.053);
-    border-radius: 0.2em;
+    margin: 0;
 }
 
 .thankyou-section p {
     font-weight: 600;
-    align-self: flex-end;
+    text-align: end;
     margin: 0;
-    padding-top: 3em;
-    
+    backdrop-filter: blur(5px);
+    padding: 0.5em;
 }
 
 .thankyou-section img {
-    width: 200px;
-    height: 75px;
+    width: 35px;
+    height: auto;
     object-fit: cover;
-    align-self: flex-end;
+    align-self: center;
 }
 @media (min-width: 768px) {
     .contact-form {
@@ -673,14 +682,9 @@ body:not(.theme-dark) .footer-connect img {
 
     .submit-btn:hover {
         cursor: pointer;
-        background-color: #f16e0b;
-        color: black;
-        border: black;
+        background-color: var(--color-secondary);
+        color: var(--color-bg);
     } 
-}
-
-@media (min-width: 1024px) {
-
 }
 
 /* =========================
