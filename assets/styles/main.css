@@ -820,6 +820,7 @@ padding-bottom: 2em;
     max-height: 300px;
     object-fit: cover;
     border-radius: 0.2em;
+    margin: 0 auto;
 }
 
 .card h3 {

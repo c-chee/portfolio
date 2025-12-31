@@ -54,3 +54,8 @@ This project was created to demonstrate:
 - Dynamic UI features using JavaScript
 - Responsive and visually engaging design
 
+---
+
+## Hosted
+- https://c-chee.github.io/portfolio/
+
