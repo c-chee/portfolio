@@ -631,13 +631,22 @@ body:not(.theme-dark) .footer-connect img {
 .project-card .project-description {
     text-align: left;
     color: var(--color-secondary);
-    text-decoration: underline;
+    background: transparent;
+    width: fit-content;
+    text-decoration: none;
     margin-top: 0.5rem;
     display: inline-block;
+    padding: 2px 8px;
+    border: 1.5px solid var(--color-secondary);
+    border-radius: 5px;
+    font-weight: 500;
+    align-self: center;
 }
 
 .project-card .project-description:hover {
     cursor: pointer;
+    color: var(--color-third);
+    background: var(--color-secondary);
 }
 
 /* @media (min-width: 768px) {

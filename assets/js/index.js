@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Links
             const descriptionLink = document.createElement('a');
-            descriptionLink.textContent = 'GitHub';
+            descriptionLink.textContent = 'GitHub Link';
             descriptionLink.href = post.url;
             descriptionLink.classList.add('project-description');
             descriptionLink.target = '_blank';
