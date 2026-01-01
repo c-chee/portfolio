@@ -585,7 +585,7 @@ body:not(.theme-dark) .footer-connect img {
 .projects-section {
     display: flex;
     flex-direction: column;
-    margin: 5em 1em;
+    margin: 1em 1em 5em 1em;
     overflow-x: hidden;
 }
 
