@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.appendChild(img);
             }
 
-            // ✅ Title
+            // Title
             const title = document.createElement('h3');
             title.textContent = post.title;
             title.classList.add('project-title');
 
-            // ✅ Anchor replaces <p>
+            // Links
             const descriptionLink = document.createElement('a');
-            descriptionLink.textContent = 'View Project';
+            descriptionLink.textContent = 'GitHub';
             descriptionLink.href = post.url;
             descriptionLink.classList.add('project-description');
             descriptionLink.target = '_blank';
