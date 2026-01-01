@@ -576,6 +576,78 @@ body:not(.theme-dark) .footer-connect img {
 }
 
 /* =========================
+    Project Section    
+==========================*/
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 1em;
+    overflow-x: hidden;
+}
+
+.projects-grid {
+    display: grid;
+    justify-items: center;
+    align-items: self-start;
+    align-self: center;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* margin: 2em; */
+    gap: 4em;
+    width: 90%;
+}
+
+.project-card {
+    background: var(--color-third);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0.2em;
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px;
+    margin: 1em;
+}
+
+.project-card img {
+    width: 100%;
+    /* max-width: 400px; */
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0.2em;
+    margin: 0 auto;
+}
+
+.project-card .project-title {
+    text-align: left;
+}
+
+.project-card .project-description {
+    text-align: left;
+    color: var(--color-secondary);
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.project-card .project-description:hover {
+    cursor: pointer;
+}
+
+/* @media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1250px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+/* =========================
     Contact Form   
 ==========================*/
 .contact-container {
@@ -824,11 +896,11 @@ padding-bottom: 2em;
     margin: 0 auto;
 }
 
-.card h3 {
+.card .reflections-title {
     text-align: left;
 }
 
-.card p {
+.card .reflections-p {
     text-align: left;
 }
 

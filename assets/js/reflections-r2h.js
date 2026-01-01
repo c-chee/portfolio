@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = post.photo;
             img.alt = post.title;
+            img.classList.add('reflections-img');
             card.appendChild(img);
         }
 
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         topic.textContent = post.topic;
 
         const title = document.createElement('h3');
+        title.classList.add('reflections-title');
         title.textContent = post.title;
 
         const date = document.createElement('div');
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         date.textContent = post.date;
 
         const reflection = document.createElement('p');
+        reflection.classList.add('reflections-p');
         reflection.textContent = post.reflection;
 
         card.appendChild(topic);

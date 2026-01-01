@@ -1,0 +1,22 @@
+[
+    {
+        "photo": "assets/images/budget-tracker.png",
+        "title": "Budget Tracker",
+        "url": "https://github.com/c-chee/Budget_Tracker" 
+    },
+    {
+        "photo": "assets/images/calculator.png",
+        "title": "Calculator App",
+        "url": "https://github.com/c-chee/calculator" 
+    },
+    {
+        "photo": "assets/images/roshambo.png",
+        "title": "Rock, Paper, Scissors Game",
+        "url": "https://github.com/c-chee/roshambo" 
+    },
+    {
+        "photo": "assets/images/code-for-justice.png",
+        "title": "The Flow State",
+        "url": "https://github.com/C18-Group4/TheFlowState" 
+    }
+]

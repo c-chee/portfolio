@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlideIndex = 0;
     let slidesData = [];
 
+    const grid = document.getElementById('projects-grid');
+
+    // === About Me Slides ===
     fetch('assets/data/about-me-slides.json')
         .then(res => res.json())
         .then(data => {
@@ -53,4 +56,45 @@ document.addEventListener('DOMContentLoaded', () => {
     window.plusSlide = function (n) {
         showSlide(currentSlideIndex + n);
     };
+
+    // === Portfolio Projects Grid ===
+    fetch('assets/data/projects.json')
+    .then(response => response.json())
+    .then(posts => {
+        posts.forEach(post => {
+            const card = document.createElement('div');
+            card.classList.add('project-card');
+
+            // Image
+            if (post.photo) {
+                const img = document.createElement('img');
+                img.src = post.photo;
+                img.alt = post.title;
+                img.classList.add('img');
+                card.appendChild(img);
+            }
+
+            // ✅ Title
+            const title = document.createElement('h3');
+            title.textContent = post.title;
+            title.classList.add('project-title');
+
+            // ✅ Anchor replaces <p>
+            const descriptionLink = document.createElement('a');
+            descriptionLink.textContent = 'View Project';
+            descriptionLink.href = post.url;
+            descriptionLink.classList.add('project-description');
+            descriptionLink.target = '_blank';
+            descriptionLink.rel = 'noopener noreferrer';
+
+            card.appendChild(title);
+            card.appendChild(descriptionLink);
+            grid.appendChild(card);
+        });
+    })
+    .catch(error => {
+        console.error('Error loading posts:', error);
+    });
+
+
 });
