@@ -873,9 +873,12 @@ padding-bottom: 2em;
 
 .reflections-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: 2em;
-    gap: 1em;
+    gap: 3em;
+    width: 90%;
+    align-self: center;
 }
 
 .card {
@@ -884,6 +887,7 @@ padding-bottom: 2em;
     flex-direction: column;
     padding: 1em;
     border-radius: 0.2em;
+    width: 100%;
 }
 
 .card img {
@@ -919,7 +923,7 @@ padding-bottom: 2em;
     margin-top: auto;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .reflections-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -929,7 +933,7 @@ padding-bottom: 2em;
     .reflections-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 /* Gif */
 .moving-gif {
