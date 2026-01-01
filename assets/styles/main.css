@@ -607,6 +607,7 @@ body:not(.theme-dark) .footer-connect img {
     max-width: 400px;
     min-height: 200px;
     margin: 1em;
+    border: 1.5px solid var(--color-secondary);
 }
 
 .project-card img {
@@ -821,6 +822,7 @@ body:not(.theme-dark) .footer-connect img {
     margin: 0;
     width: 15em;
     border-radius: 5px;
+    border: 1.5px solid var(--color-secondary);
 }
 
 .topic-tiles p {
@@ -876,7 +878,7 @@ padding-bottom: 2em;
     /* grid-template-columns: 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: 2em;
-    gap: 3em;
+    gap: 4em;
     width: 90%;
     align-self: center;
 }
@@ -888,6 +890,7 @@ padding-bottom: 2em;
     padding: 1em;
     border-radius: 0.2em;
     width: 100%;
+    border: 1.5px solid var(--color-secondary);
 }
 
 .card img {
